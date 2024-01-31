@@ -16,13 +16,13 @@ services:
   app:
     env_file:
       - .env
-    image: galethegreat/rcubot:latest
+    image: galethegreat/rcubot:latest-arm
     ports:
       - "${APP_PORT:-3000}:3000"
     depends_on:
       - db
     volumes:
-      - F:/Code/rucbot/:/usr/src/app
+      - ./:/usr/src/app
 
 volumes:
   db-data:
