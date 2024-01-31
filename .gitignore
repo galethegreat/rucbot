@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# VS Code
+.vscode/
+
+#env file containing user/password for postgres db
+.env
+

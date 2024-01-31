@@ -1,0 +1,24 @@
+# Create Table
+GET http://localhost:13000/create-table
+###
+# Add Entry
+POST http://localhost:13000/entries
+Content-Type: application/json
+
+{
+  "name": "Gale"
+}
+###
+# Get All Entries
+GET http://localhost:13000/entries
+###
+# Update Entry (Replace :id with the actual ID from the response of the previous request)
+PUT http://localhost:13000/entries/1
+Content-Type: application/json
+
+{
+  "name": "Updated Name"
+}
+###
+# Delete Entry (Replace :id with the actual ID from the response of the first request)
+DELETE http://localhost:13000/entries/1
