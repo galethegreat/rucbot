@@ -1,8 +1,8 @@
 # Create Table
-GET http://localhost:13000/create-table
+GET http://localhost:3000/create-table
 ###
 # Add Entry
-POST http://localhost:13000/entries
+POST http://localhost:3000/entries
 Content-Type: application/json
 
 {
@@ -10,10 +10,10 @@ Content-Type: application/json
 }
 ###
 # Get All Entries
-GET http://localhost:13000/entries
+GET http://localhost:3000/entries
 ###
 # Update Entry (Replace :id with the actual ID from the response of the previous request)
-PUT http://localhost:13000/entries/1
+PUT http://localhost:3000/entries/1
 Content-Type: application/json
 
 {
@@ -21,4 +21,4 @@ Content-Type: application/json
 }
 ###
 # Delete Entry (Replace :id with the actual ID from the response of the first request)
-DELETE http://localhost:13000/entries/1
+DELETE http://localhost:3000/entries/1
