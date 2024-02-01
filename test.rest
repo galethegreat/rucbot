@@ -2,7 +2,7 @@
 GET http://localhost:3000/create-table
 ###
 # Add Entry
-POST http://localhost:3000/entries
+POST http://192.168.1.105:3000/entries
 Content-Type: application/json
 
 {
@@ -10,7 +10,7 @@ Content-Type: application/json
 }
 ###
 # Get All Entries
-GET http://localhost:3000/entries
+GET http://192.168.1.105:3000/entries
 ###
 # Update Entry (Replace :id with the actual ID from the response of the previous request)
 PUT http://localhost:3000/entries/1
