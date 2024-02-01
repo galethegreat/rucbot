@@ -45,13 +45,20 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and push
+      - name: Build and push docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           file: Dockerfile.dev
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/rcubot:latest
+      - name: Build and push ARM32 Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile.prod
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/rcubot:latest-arm
         
     
     
