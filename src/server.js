@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 // Welcome message and list of endpoints
 app.get('/', (req, res) => {
   res.send(`
-    <h1>Welcome to rcubot</h1>
+    <h1>Welcome to rcubot:</h1>
     <p>Available Endpoints:</p>
     <ul>
       <li>GET /create-table <a href="/create-table">Create Table </a></li>
