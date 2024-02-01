@@ -57,6 +57,7 @@ jobs:
         with:
           context: .
           file: Dockerfile.prod
+          platforms: linux/armv7
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/rcubot:latest-arm
         
