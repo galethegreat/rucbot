@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send(`
     <h1>Welcome to rcubot:</h1>
-    <p>Available Endpoints:</p>
+    <p>Test Available Endpoints:</p>
     <ul>
       <li>GET /create-table <a href="/create-table">Create Table </a></li>
       <li>GET /entries <a href="/entries">Get All Entries</a></li>
