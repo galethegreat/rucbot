@@ -1,0 +1,10 @@
+node_modules
+tests
+npm-debug.log
+.env
+test.rest
+.git
+.cache
+*.md
+!README*.md
+.github/
