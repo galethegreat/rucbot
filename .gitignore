@@ -4,6 +4,8 @@ node_modules/
 # Docker
 docker-compose.override.yml
 
+#github
+.github
 
 # VS Code
 .vscode/
