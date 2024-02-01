@@ -1,8 +1,11 @@
-FROM node:slim
+FROM arm32v7/node:14-buster-slim
 
 ENV LANG=C.UTF-8
+<<<<<<< HEAD:Dockerfile.dev
  
 RUN npm install -g nodemon 
+=======
+>>>>>>> d32e24aece460dd692b0e257a9b896ba730e4469:Dockerfile
 
 WORKDIR /usr/src/app
 
@@ -13,4 +16,8 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
+<<<<<<< HEAD:Dockerfile.dev
 CMD [ "npm", "run", "dev" ]
+=======
+CMD [ "npm", "run", "start"]
+>>>>>>> d32e24aece460dd692b0e257a9b896ba730e4469:Dockerfile

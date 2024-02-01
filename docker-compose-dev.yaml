@@ -16,7 +16,7 @@ services:
   app:
     env_file:
       - .env
-    image: galethegreat/rcubot:latest
+    image: galethegreat/rcubot:latest-arm
     ports:
       - "${APP_PORT:-3000}:3000"
     depends_on:
