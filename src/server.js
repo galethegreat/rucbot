@@ -98,3 +98,5 @@ app.delete('/entries/:id', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+module.exports = { app };

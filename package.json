@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env NODE_ENV=test jest --port=3000 --detectOpenHandles --forceExit",
     "dev": "nodemon src/server.js -L",
     "start": "node src/server.js"
   },
@@ -16,6 +16,9 @@
     "pg": "^8.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.14"
+    "cross-env": "^7.0.3",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.14",
+    "supertest": "^6.3.4"
   }
 }
